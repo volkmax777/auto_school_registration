@@ -96,7 +96,7 @@ const fs = require('fs');
         // Click text=Регистрация заявления в школу на текущий учебный год
         await Promise.all([
             page.waitForNavigation(/*{ url: 'https://edu.egov66.ru/Modules/OOOMODULE/?once=MFG0_f9l7Dko20DR6jP5qCTHHSrv8-Zl4NVlzmC7H0VPTrBQuIqmIJtYBBG9X4NDlIVNqTOdbH5hPCaX4YoFZEvsK94#/' }*/),
-            page.locator('text=Регистрация заявления в школу на текущий учебный год').click()
+            page.locator('text=Регистрация заявления в 1-ый класс будущего учебного года').click()
         ]);
 
         // Select 5d421ce8-9480-407a-b389-a5e2016e15ed
