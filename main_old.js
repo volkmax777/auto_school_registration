@@ -127,10 +127,10 @@ const fs = require('fs');
         await page.locator('input[name="ApplicantBirthdate"]').fill(userData.parent.birthDate);
 
         // Click input[name="ApplicantBirthPlace"]
-        //await page.locator('input[name="ApplicantBirthPlace"]').click();
+        await page.locator('input[name="ApplicantBirthPlace"]').click();
 
         // Fill input[name="ApplicantBirthPlace"]
-        //await page.locator('input[name="ApplicantBirthPlace"]').fill(userData.parent.birthPlace);
+        await page.locator('input[name="ApplicantBirthPlace"]').fill(userData.parent.birthPlace);
 
         // Select 6a48ea28-f9c3-4dca-8812-a5e3000fce09
         if (userData.parent.relationType === 'Отец') {
@@ -170,102 +170,6 @@ const fs = require('fs');
         // Fill input[name="UnitCode"]
         await page.locator('input[name="UnitCode"]').fill(userData.parent.passportUnitCode);
 
-        // Click input[name="ApplRegisterAddress_Region"]
-        await page.locator('input[name="ApplRegisterAddress_Region"]').click();
-
-        // Fill input[name="ApplRegisterAddress_Region"]
-        await page.locator('input[name="ApplRegisterAddress_Region"]').fill(userData.registration.region);
-
-        // Click input[name="ApplRegisterAddress_District"]
-        await page.locator('input[name="ApplRegisterAddress_District"]').click();
-
-        // Fill input[name="ApplRegisterAddress_District"]
-        await page.locator('input[name="ApplRegisterAddress_District"]').fill(userData.registration.district);
-
-        // Click input[name="ApplRegisterAddress_City"]
-        await page.locator('input[name="ApplRegisterAddress_City"]').click();
-
-        // Fill input[name="ApplRegisterAddress_City"]
-        await page.locator('input[name="ApplRegisterAddress_City"]').fill(userData.registration.city);
-
-        // Click input[name="ApplRegisterAddress_Street"]
-        await page.locator('input[name="ApplRegisterAddress_Street"]').click();
-
-        // Fill input[name="ApplRegisterAddress_Street"]
-        await page.locator('input[name="ApplRegisterAddress_Street"]').fill(userData.registration.street);
-
-        // Click input[name="ApplRegisterAddress_House"]
-        await page.locator('input[name="ApplRegisterAddress_House"]').click();
-
-        // Fill input[name="ApplRegisterAddress_House"]
-        await page.locator('input[name="ApplRegisterAddress_House"]').fill(userData.registration.house);
-
-        // Click input[name="ApplRegisterAddress_Building"]
-        await page.locator('input[name="ApplRegisterAddress_Building"]').click();
-
-        // Fill input[name="ApplRegisterAddress_Building"]
-        await page.locator('input[name="ApplRegisterAddress_Building"]').fill(userData.registration.building);
-
-        // Click input[name="ApplRegisterAddress_Frame"]
-        await page.locator('input[name="ApplRegisterAddress_Frame"]').click();
-
-        // Fill input[name="ApplRegisterAddress_Frame"]
-        await page.locator('input[name="ApplRegisterAddress_Frame"]').fill(userData.registration.frame);
-
-        // Click input[name="ApplRegisterAddress_Flat"]
-        await page.locator('input[name="ApplRegisterAddress_Flat"]').click();
-
-        // Fill input[name="ApplRegisterAddress_Flat"]
-        await page.locator('input[name="ApplRegisterAddress_Flat"]').fill(userData.registration.flat);
-
-        // Click input[name="ApplResidentalAddress_Region"]
-        await page.locator('input[name="ApplResidentalAddress_Region"]').click();
-
-        // Fill input[name="ApplResidentalAddress_Region"]
-        await page.locator('input[name="ApplResidentalAddress_Region"]').fill(userData.residental.region);
-
-        // Click input[name="ApplResidentalAddress_District"]
-        await page.locator('input[name="ApplResidentalAddress_District"]').click();
-
-        // Fill input[name="ApplResidentalAddress_District"]
-        await page.locator('input[name="ApplResidentalAddress_District"]').fill(userData.residental.district);
-
-        // Click input[name="ApplResidentalAddress_City"]
-        await page.locator('input[name="ApplResidentalAddress_City"]').click();
-
-        // Fill input[name="ApplResidentalAddress_City"]
-        await page.locator('input[name="ApplResidentalAddress_City"]').fill(userData.residental.city);
-
-        // Click input[name="ApplResidentalAddress_Street"]
-        await page.locator('input[name="ApplResidentalAddress_Street"]').click();
-
-        // Fill input[name="ApplResidentalAddress_Street"]
-        await page.locator('input[name="ApplResidentalAddress_Street"]').fill(userData.residental.street);
-
-        // Click input[name="ApplResidentalAddress_House"]
-        await page.locator('input[name="ApplResidentalAddress_House"]').click();
-
-        // Fill input[name="ApplResidentalAddress_House"]
-        await page.locator('input[name="ApplResidentalAddress_House"]').fill(userData.residental.house);
-
-        // Click input[name="ApplResidentalAddress_Building"]
-        await page.locator('input[name="ApplResidentalAddress_Building"]').click();
-
-        // Fill input[name="ApplResidentalAddress_Building"]
-        await page.locator('input[name="ApplResidentalAddress_Building"]').fill(userData.residental.building);
-
-        // Click input[name="ApplResidentalAddress_Frame"]
-        await page.locator('input[name="ApplResidentalAddress_Frame"]').click();
-
-        // Fill input[name="ApplResidentalAddress_Frame"]
-        await page.locator('input[name="ApplResidentalAddress_Frame"]').fill(userData.residental.frame);
-
-        // Click input[name="ApplResidentalAddress_Flat"]
-        await page.locator('input[name="ApplResidentalAddress_Flat"]').click();
-
-        // Fill input[name="ApplResidentalAddress_Flat"]
-        await page.locator('input[name="ApplResidentalAddress_Flat"]').fill(userData.residental.flat);
-
         // Click input[name="Children_LastName"]
         await page.locator('input[name="Children_LastName"]').click();
 
@@ -291,10 +195,10 @@ const fs = require('fs');
         await page.locator('input[name="Children_BirthDate"]').fill(userData.child.birthDate);
 
         // Click input[name="Children_BirthPlace"]
-        //await page.locator('input[name="Children_BirthPlace"]').click();
+        await page.locator('input[name="Children_BirthPlace"]').click();
 
         // Fill input[name="Children_BirthPlace"]
-        //await page.locator('input[name="Children_BirthPlace"]').fill(userData.child.birthPlace);
+        await page.locator('input[name="Children_BirthPlace"]').fill(userData.child.birthPlace);
 
         // Click input[name="Children_Series"]
         await page.locator('input[name="Children_Series"]').click();
@@ -326,6 +230,102 @@ const fs = require('fs');
         // Fill input[name="Children_ActEntry"]
         await page.locator('input[name="Children_ActEntry"]').fill(userData.child.actEntry);
 
+        // Click input[name="RegisterAddress_Region"]
+        await page.locator('input[name="RegisterAddress_Region"]').click();
+
+        // Fill input[name="RegisterAddress_Region"]
+        await page.locator('input[name="RegisterAddress_Region"]').fill(userData.registration.region);
+
+        // Click input[name="RegisterAddress_District"]
+        await page.locator('input[name="RegisterAddress_District"]').click();
+
+        // Fill input[name="RegisterAddress_District"]
+        await page.locator('input[name="RegisterAddress_District"]').fill(userData.registration.district);
+
+        // Click input[name="RegisterAddress_City"]
+        await page.locator('input[name="RegisterAddress_City"]').click();
+
+        // Fill input[name="RegisterAddress_City"]
+        await page.locator('input[name="RegisterAddress_City"]').fill(userData.registration.city);
+
+        // Click input[name="RegisterAddress_Street"]
+        await page.locator('input[name="RegisterAddress_Street"]').click();
+
+        // Fill input[name="RegisterAddress_Street"]
+        await page.locator('input[name="RegisterAddress_Street"]').fill(userData.registration.street);
+
+        // Click input[name="RegisterAddress_House"]
+        await page.locator('input[name="RegisterAddress_House"]').click();
+
+        // Fill input[name="RegisterAddress_House"]
+        await page.locator('input[name="RegisterAddress_House"]').fill(userData.registration.house);
+
+        // Click input[name="RegisterAddress_Building"]
+        await page.locator('input[name="RegisterAddress_Building"]').click();
+
+        // Fill input[name="RegisterAddress_Building"]
+        await page.locator('input[name="RegisterAddress_Building"]').fill(userData.registration.building);
+
+        // Click input[name="RegisterAddress_Frame"]
+        await page.locator('input[name="RegisterAddress_Frame"]').click();
+
+        // Fill input[name="RegisterAddress_Frame"]
+        await page.locator('input[name="RegisterAddress_Frame"]').fill(userData.registration.frame);
+
+        // Click input[name="RegisterAddress_Flat"]
+        await page.locator('input[name="RegisterAddress_Flat"]').click();
+
+        // Fill input[name="RegisterAddress_Flat"]
+        await page.locator('input[name="RegisterAddress_Flat"]').fill(userData.registration.flat);
+
+        // Click input[name="ResidentalAddress_Region"]
+        await page.locator('input[name="ResidentalAddress_Region"]').click();
+
+        // Fill input[name="ResidentalAddress_Region"]
+        await page.locator('input[name="ResidentalAddress_Region"]').fill(userData.residental.region);
+
+        // Click input[name="ResidentalAddress_District"]
+        await page.locator('input[name="ResidentalAddress_District"]').click();
+
+        // Fill input[name="ResidentalAddress_District"]
+        await page.locator('input[name="ResidentalAddress_District"]').fill(userData.residental.district);
+
+        // Click input[name="ResidentalAddress_City"]
+        await page.locator('input[name="ResidentalAddress_City"]').click();
+
+        // Fill input[name="ResidentalAddress_City"]
+        await page.locator('input[name="ResidentalAddress_City"]').fill(userData.residental.city);
+
+        // Click input[name="ResidentalAddress_Street"]
+        await page.locator('input[name="ResidentalAddress_Street"]').click();
+
+        // Fill input[name="ResidentalAddress_Street"]
+        await page.locator('input[name="ResidentalAddress_Street"]').fill(userData.residental.street);
+
+        // Click input[name="ResidentalAddress_House"]
+        await page.locator('input[name="ResidentalAddress_House"]').click();
+
+        // Fill input[name="ResidentalAddress_House"]
+        await page.locator('input[name="ResidentalAddress_House"]').fill(userData.residental.house);
+
+        // Click input[name="ResidentalAddress_Building"]
+        await page.locator('input[name="ResidentalAddress_Building"]').click();
+
+        // Fill input[name="ResidentalAddress_Building"]
+        await page.locator('input[name="ResidentalAddress_Building"]').fill(userData.residental.building);
+
+        // Click input[name="ResidentalAddress_Frame"]
+        await page.locator('input[name="ResidentalAddress_Frame"]').click();
+
+        // Fill input[name="ResidentalAddress_Frame"]
+        await page.locator('input[name="ResidentalAddress_Frame"]').fill(userData.residental.frame);
+
+        // Click input[name="ResidentalAddress_Flat"]
+        await page.locator('input[name="ResidentalAddress_Flat"]').click();
+
+        // Fill input[name="ResidentalAddress_Flat"]
+        await page.locator('input[name="ResidentalAddress_Flat"]').fill(userData.residental.flat);
+
         // Check input[name="NotificationByEmail"]
         await page.locator('input[name="NotificationByEmail"]').check();
 
@@ -345,22 +345,22 @@ const fs = require('fs');
         await page.locator('input[name="Phone"]').fill(userData.contactPhone);
 
         // Select 1
-        // await page.locator('select[name="Grade"]').selectOption('1');
-        //
-        // // Click text=Показать школы по выбранным параметрам
-        // await page.locator('text=Показать школы по выбранным параметрам').click();
-        //
-        // // Select 9820e1a8-7273-4b5e-b6cf-a5e2016ec272
-        // await page.locator('select[name="Institution"]').selectOption('9820e1a8-7273-4b5e-b6cf-a5e2016ec272');
-        //
-        // // Select 30720191-c7ed-43d2-84cb-ad9600adcd18
-        // await page.locator('select[name="Group"]').selectOption('30720191-c7ed-43d2-84cb-ad9600adcd18');
-        //
-        // // Click button:has-text("Выбрать")
-        // await page.locator('button:has-text("Выбрать")').click();
-        //
-        // // Check input[name="LicenseAggrement"]
-        // await page.locator('input[name="LicenseAggrement"]').check();
+        //await page.locator('select[name="Grade"]').selectOption('1');
+
+        // Click text=Показать школы по выбранным параметрам
+        //await page.locator('text=Показать школы по выбранным параметрам').click();
+
+        // Select 9820e1a8-7273-4b5e-b6cf-a5e2016ec272
+        //await page.locator('select[name="Institution"]').selectOption('9820e1a8-7273-4b5e-b6cf-a5e2016ec272');
+
+        // Select 30720191-c7ed-43d2-84cb-ad9600adcd18
+        //await page.locator('select[name="Group"]').selectOption('30720191-c7ed-43d2-84cb-ad9600adcd18');
+
+        // Click button:has-text("Выбрать")
+        //await page.locator('button:has-text("Выбрать")').click();
+
+        // Check input[name="LicenseAggrement"]
+        //await page.locator('input[name="LicenseAggrement"]').check();
 
         // ---------------------
         //await context.close();
