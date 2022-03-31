@@ -1,0 +1,17 @@
+{
+  "name": "auto_school_registration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run": "node main.js",
+    "debug": "PWDEBUG=1 node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.20.1"
+  }
+}
