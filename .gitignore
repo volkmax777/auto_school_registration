@@ -1,5 +1,6 @@
 #userdata
 userdata.json
+package-lock.json
 
 # Logs
 logs
